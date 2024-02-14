@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class CompOneComponent {
 
+  counter:number = 0;
+
+  counterIncrease(){
+    this.counter++;
+  }
+
+  counterDecrease(){
+    if(this.counter > 0){
+      this.counter--;
+    }
+  }
+
 }
